@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+<body>
+    <header>
+        <strong>Welcome to your Dashboard!</strong>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="res/images/me.png" width="128" height="128" alt="My picture">
+            </div>
+            <div>
+                <ul>
+                    <li>Timofey Shinshakov</li>
+                    <li> A date following this format 01/01/2001</li>
+                    <li> Software Engineering </li>
+                </ul>
+            </div>
+            <div>
+                <strong>2.65</strong>
+            </div>
+        </section>
+        <section>
+            <h1>Courses</h1>
+            <table border="1"> <!--Так лучше не делать-->
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Course Title</th>
+                        <th>Semester</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="https://courses.cs.ut.ee/2024/ASD/fall" target="_blank">Agile software development</a></td>
+                        <td>fall</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://courses.cs.ut.ee/2024/systemsmodelling/fall" target="_blank">Systems modelling</a></td>
+                        <td>fall</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://courses.cs.ut.ee/2024/RE/fall" target="_blank">Requirements Engineering</a></td>
+                        <td colspan="2" rowspan="2">fall</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="https://courses.cs.ut.ee/2022/HCI/fall" target="_blank">Human Computer Interaction</a></td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>footer</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <br>
+        <section>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td colspan="2">W</td>
+                        <td rowspan="2">W</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">W</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">W</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <section>
+            <form>
+                <label for="course">Course title:</label>
+                <br>
+                <input type="text" id="course">
+                <br>
+                <label for="semester">Semester:</label>
+                <br>
+                <select id="semester">
+                    <option>Lesson1</option>
+                    <option>Lesson2</option>
+                    <option>Lesson3</option>
+                </select>
+                <br>
+                <strong>Attendance:</strong>
+                <br>
+                <input type="radio" id="radio1" name="attendance">
+                <label for="radio1">Virtual attendance</label>
+                <br>
+                <input type="radio" id="radio2" name="attendance">
+                <label for="radio2">Physical attendance</label>
+                <br>
+                <input type="button" value="Submit">
+            </form>     
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
